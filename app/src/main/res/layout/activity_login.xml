@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="end"
+           android:layout_weight="1"
+           android:padding="10dp"
+           android:src="@drawable/home"
+           android:id="@+id/honeId"/>
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Wellcome "
+           android:id="@+id/v1"/>
+
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="end"
+           android:layout_weight="1"
+           android:padding="10dp"
+           android:id="@+id/logOut"
+           android:src="@drawable/logout"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/Prob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/myListView"/>
+
+</LinearLayout>
